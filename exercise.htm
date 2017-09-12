@@ -1,61 +1,59 @@
 <!DOCTYPE html>
 <head>
-<style>
-label{
-    display:inline-block;
-    width:120px;
-}
-</style>
-<h1 style="text-align:center"> HTML form exercise </h1>
-<h2><b> Contact form</b></h2>
-<form>
-  <label>Your name<sup>*</sup>:</label><input type="text" name="first name" placeholder="full name" required><br>
-  <label>E-mail<sup>*</sup>:</label><input type="email" name="mail" required><br>
-  <label>Phone number: </label><input type='tel' name='number' pattern="^[7-9]\d{9}$"><br>
-  <label>Website<sup>*</sup>:</label><input type="url" name="Website" value="http://" required><br><br>
-  Comments<sup>*</sup>:<br>
-  <textarea rows=10 columns=10></textarea>
-  <br><br><br>
-  <b>Text field</b>
-  <br>
-  Your name: <input type="text" name="name"><br><br>
-  <b>Password</b><br>
-  Password: <input type="password" name="name"><br><br>
-  <b>Radio buttons</b><br>
-  Do you like pizza?<br>
-  <input type="radio" name="pizza" value="yes" checked>Yes<br>
-  <input type="radio" name="pizza" value="no">No<br>
-  <input type="radio" name="pizza" value="Maybe">Maybe<br>
-  <input type="radio" name="pizza" value="Never tried">Never tried<br><br>
-  <b>Check Box</b><br>
-  <input type="checkbox" name="service">Check this box if you like our service<br><br>
-  <b>Text area</b><br>
-  <p>Anything you would like to say?</p>
-  <textarea rows=10 columns=140 name="suggestion"></textarea><br><br>
-  <b>I Like</b><br>
-  <select name="likes" multiple>
-    <option value="mushrooms">mushrooms</option>
-    <option value="green peppers">green peppers</option>
-    <option value="onions">onions</option>
-    <option value="tomatoes">tomatoes</option>
-    <option value="olives">olives</option>
-  </select>
-  <br><br>
-  <b>Menu</b><br>
-  Your favorite color:<br>
-  <select name="color">
-    <option value="red">red</option>
-    <option value="black">black</option>
-    <option value="green">green</option>
-    <option value="orange">orange</option>
-    <option value="purple">purple</option>
-  </select>
-  <br><br>
-  <b>Attach file</b><br>
-  <input type="file">
-  <br><br>
-  <b>Buttons</b><br>
-  <input type="submit">
-  <input type="reset">
-  </form>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<h1> HTML form exercise </h1>
+<fieldset >
+  <legend><b>Contact form</b></legend>
+  <form>
+    <label>Your name<sup>*</sup>:</label><input type="text" name="first name" placeholder="full name" required><br>
+    <label>E-mail<sup>*</sup>:</label><input type="email" name="mail" required><br>
+    <label>Phone number: </label><input type='tel' name='number' pattern="^[7-9]\d{9}$"><br>
+    <label>Website<sup>*</sup>:</label><input type="url" name="Website" value="http://" required><br><br>
+    Comments<sup>*</sup>:<br>
+    <textarea rows=10 columns=10></textarea>
+    <br><br><br>
+    <b>Text field</b>
+    <br>
+    Your name: <input type="text" name="name"><br><br>
+    <b>Password</b><br>
+    Password: <input type="password" name="name"><br><br>
+    <b>Radio buttons</b><br>
+    Do you like pizza?<br>
+    <input type="radio" name="pizza" value="yes" checked>Yes<br>
+    <input type="radio" name="pizza" value="no">No<br>
+    <input type="radio" name="pizza" value="Maybe">Maybe<br>
+    <input type="radio" name="pizza" value="Never tried">Never tried<br><br>
+    <b>Check Box</b><br>
+    <input type="checkbox" name="service">Check this box if you like our service<br><br>
+    <b>Text area</b><br>
+    <p>Anything you would like to say?</p>
+    <textarea rows=10 columns=140 name="suggestion"></textarea><br><br>
+    <b>I Like</b><br>
+    <select name="likes" multiple>
+      <option value="mushrooms">mushrooms</option>
+      <option value="green peppers">green peppers</option>
+      <option value="onions">onions</option>
+      <option value="tomatoes">tomatoes</option>
+      <option value="olives">olives</option>
+    </select>
+    <br><br>
+    <b>Menu</b><br>
+    Your favorite color:<br>
+    <select name="color">
+      <option value="red">red</option>
+      <option value="black">black</option>
+      <option value="green">green</option>
+      <option value="orange">orange</option>
+      <option value="purple">purple</option>
+    </select>
+    <br><br>
+    <b>Attach file</b><br>
+    <input type="file">
+    <br><br>
+    <b>Buttons</b><br>
+    <input type="submit">
+    <input type="reset">
+    </form>
+</fieldset>
 </html>
