@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+
+    body
+    {
+      font-family: 'tahoma';
+    }
+
+    .small
+    { padding-top: 30px;
+      float:right;
+      font-size: 13px
+    }
+
+    span
+    {
+      color: #045198;
+      padding-right: 60px;
+    }
+
+    .heading
+    {
+      font-size: 18px;
+      color: #2c286d;
+      text-align: center;
+    }
+
+    fieldset
+    {
+      background-color: #ececec;
+      border-color: #bcbcbc;
+      margin: auto;
+      width: 600px;
+      padding: 20px 0 20px 30px;
+    }
+
+    form
+    {
+      font-size: 14px;
+      padding: 20px 0 20px 30px;
+    }
+
+    form label
+    {
+      font-size: 14px;
+      float: left;
+      text-align: right;
+      width: 7em;
+
+    }
+
+    form > input
+    {
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-color: #b9b9b9;
+      width: 360px;
+      height: 25px;
+    }
+    form span
+    {
+      color:#6f6f6f;
+      font-size: 13px;
+      margin-left: 20px;
+
+    }
+
+    textarea
+    {
+      border-color: #b9b9b9;
+      width: 360px;
+      height: 135px;
+      margin-left: 20px;
+    }
+
+    .submit
+    {
+      color: white;
+      background-color: #dc2927;
+      border-color: #a10200;
+      width: 130px;
+      height: 32px;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+  </style>
+
+
+
+</head>
+<body>
+  <img src="vinsol-logo.png">
+  <p class="small">Email us at: <span>sales@vinsol.com</span>
+  Skype: <span>Vinsol</span></p>
+  <hr style="border-color:red; border-size: 2px">
+  <p class="heading">Please fill the form below</p>
+  <fieldset>
+    <form>
+      <label>Firstname</label> <input type="text" name="fname" required><br>
+      <label>Lastname </label><input type="text" name="lname" required><br>
+      <label>Email Address </label><input type="email" name="email" required><br>
+      <label>Password </label><input type="password" name="pass" required=""><br>
+      <label>Gender</label>
+        <span><input type="radio" name="gender" value="male" checked>Male</span>
+        <span><input type="radio" name="gender" value="female">Female</span>
+      <br><br>
+      <label>Date of Birth</label>
+      <input type="number" name="day" min="1" max="31" placeholder="DD" style="width: 110px; font-size: 13px; color:#6f6f6f" required>
+      <input type="number" name="month" min="1" max="12" placeholder="MM" style="width: 110px; font-size: 13px; color:#6f6f6f" required>
+      <input type="number" name="year" min="1980" max="2000" placeholder="YY" style="width: 90px; font-size: 13px; color:#6f6f6f" required>
+      <label>Address</label>
+      <textarea>
+      </textarea>
+      <br>
+      <label style="visibility: hidden">s</label>
+      <input type="submit" value="Submit Details" class="submit">
+    </form>
+
+  </fieldset>
+</body>
+</html>
