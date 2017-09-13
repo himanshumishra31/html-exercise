@@ -2,85 +2,98 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+
 .top  {
   background: #b2e7ff;
   max-width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-family: 'tahoma';
   font-size: 24px;
   text-align: center;
   border-bottom: 2px #0ab1ff;
 }
-
-.left
+.box
 {
-  position: absolute;
+  display: flex;
+}
+
+.box .left
+{
   background: #0ab1ff;
   padding: 25px 10px;
-  width: 250px;
-  font-family: 'tahoma';
+  max-width: 250px;
   font-size: 18px;
-  max-height: 80%
 
 }
-.left li , a
+.box .left li , a
 {
   color: white;
   text-decoration: none;
   line-height: 2.5;
-  font-family: 'tahoma';
   font-size: 14px;
 }
 
-.right
+.box .right
 {
-  position: absolute;
-  max-width: 100%;
-  max-height: 80%
+  flex: 1;
   font-size: 24px;
   background-color: #ededed;
   padding: 20px;
-  left: 278px;
 }
-.right p
+.box .right p
 {
   font-size:14px;
   color:#802525;
+  margin-top: 30px;
+}
+.bottom
+{
+  background: #3cff78;
+  max-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  font-size: 24px;
+  text-align: center;
+  border-bottom: 2px #0ab1ff;
 }
 </style>
 </head>
-<body style="font-family: 'tahoma'">
+<body style="font-family: 'tahoma'" >
 <div class="top">
   <p>This is the header</p>
 </div>
-<div class="left">
-  <p>Fixed section of 250px width</p>
-  <ul>
-    <li><a href="#navigation1">Navigation Link 1</a></li>
-    <li><a href="#navigation2">Navigation Link 2</a></li>
-    <li><a href="#navigation3">Navigation Link 3</a></li>
-    <li><a href="#navigation4">Navigation Link 4</a></li>
-    <li><a href="#navigation5">Navigation Link 5</a></li>
-  </ul>
-  <p style="font-size: 12px">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt placerat nulla. Nunc dignissim sem vestibulum suscipit placerat. Nunc orci metus, dictum nec placerat id, condimentum ut ligula. Nullam eget dapibus justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed fermentum commodo enim, ultrices blandit velit suscipit ut. Ut venenatis turpis in posuere varius. Nam consequat sem id justo gravida, sed molestie nibh interdum. Quisque rhoncus rhoncus maximus. Vivamus vestibulum est sem, sit amet eleifend mauris facilisis nec. Curabitur auctor a leo vitae malesuada. In aliquam blandit augue, et iaculis enim dictum quis. Praesent pharetra quam ac facilisis viverra. Integer posuere eleifend purus. Aenean quam sem, eleifend id tempor sit amet, varius ac dui.
-  </p>
+<div class="box">
+  <div class="left">
+    <p>Fixed section of 250px width</p>
+    <ul>
+      <li><a href="#navigation1">Navigation Link 1</a></li>
+      <li><a href="#navigation2">Navigation Link 2</a></li>
+      <li><a href="#navigation3">Navigation Link 3</a></li>
+      <li><a href="#navigation4">Navigation Link 4</a></li>
+      <li><a href="#navigation5">Navigation Link 5</a></li>
+    </ul>
+    <p style="font-size: 12px">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt placerat nulla. Nunc dignissim sem vestibulum suscipit placerat. Nunc orci metus, dictum nec placerat id, condimentum ut ligula. Nullam eget dapibus justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed fermentum commodo enim, ultrices blandit velit suscipit ut. Ut venenatis turpis in posuere varius. Nam consequat sem id justo gravida, sed molestie nibh interdum. Quisque rhoncus rhoncus maximus. Vivamus vestibulum est sem, sit amet eleifend mauris facilisis nec. Curabitur auctor a leo vitae malesuada. In aliquam blandit augue, et iaculis enim dictum quis. Praesent pharetra quam ac facilisis viverra. Integer posuere eleifend purus. Aenean quam sem, eleifend id tempor sit amet, varius ac dui.
+    </p>
+  </div>
+  <div class="right">
+    <p style="font-size: 24px; color: black" >Fixed section of 750px width including padding and margins</p>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non libero turpis. Praesent sed eleifend nulla. Nullam sed risus lacus. Curabitur vitae ligula eget justo egestas faucibus. Fusce ut ipsum eget elit venenatis vehicula pharetra et quam. In lobortis nisl aliquet, molestie lorem in, laoreet diam. Pellentesque blandit hendrerit ligula, ac vehicula arcu pellentesque ut. Nulla dignissim metus purus. Sed scelerisque volutpat diam eget ullamcorper. Nunc rhoncus sapien suscipit, pellentesque enim vel, interdum nulla. Maecenas nec consequat ex. Aenean euismod porta finibus. Maecenas pellentesque est felis, non commodo arcu consequat et.
+    </p>
+    <p >
+    Donec mauris dolor, hendrerit sed vestibulum nec, iaculis sed tellus. Aenean sagittis pharetra purus et sagittis. Curabitur sit amet enim magna. Etiam ut ultrices risus. Fusce maximus fermentum libero et pretium. Sed tincidunt, diam in interdum venenatis, elit dolor facilisis purus, vel accumsan massa elit eget purus. Fusce mattis magna vel ultrices lacinia. Praesent sit amet ultricies massa. Donec tellus tortor, tincidunt at bibendum id, euismod tincidunt orci. Pellentesque ultricies lectus ultricies, iaculis ligula condimentum, sodales neque. Suspendisse mauris urna, posuere et euismod at, finibus et metus. Vestibulum dictum mauris ut metus pharetra, nec laoreet dolor vehicula. Curabitur eleifend, orci eget viverra fermentum, dui ex efficitur dui, tristique maximus orci dui quis tortor. Etiam id rhoncus eros, eget tempus ante. Praesent arcu augue, auctor id lacus eget, interdum laoreet nunc. Proin a euismod dui.
+    </p>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque felis ac rutrum aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit dolor leo, non maximus nisi hendrerit eu. Morbi porttitor facilisis venenatis. Donec feugiat turpis sed finibus mollis. Nulla efficitur orci ut pulvinar fringilla. Curabitur pellentesque risus nibh, et porta tellus iaculis ac. Aenean quis sapien vel risus sollicitudin mattis a ac dui. Maecenas a pharetra libero. Mauris ac dui ipsum. Maecenas vitae erat turpis. Etiam laoreet elit sit amet suscipit convallis.
+    </p>
+    <p>
+    Donec nisl orci, euismod nec enim semper, placerat hendrerit dui. Phasellus ut tincidunt purus. Aenean suscipit rhoncus auctor. Nulla libero erat, blandit vitae blandit accumsan, tincidunt cursus quam. Sed sit amet ultrices nibh, sed bibendum libero. Phasellus at euismod nibh. Proin nec velit feugiat, bibendum tellus eu, maximus nibh. Mauris eu quam vel nulla eleifend viverra.
+    </p>
+  </div>
 </div>
-<div class="right">
-  <p style="font-size: 24px; color: black" >Fixed section of 750px width including padding and margins</p>
-  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non libero turpis. Praesent sed eleifend nulla. Nullam sed risus lacus. Curabitur vitae ligula eget justo egestas faucibus. Fusce ut ipsum eget elit venenatis vehicula pharetra et quam. In lobortis nisl aliquet, molestie lorem in, laoreet diam. Pellentesque blandit hendrerit ligula, ac vehicula arcu pellentesque ut. Nulla dignissim metus purus. Sed scelerisque volutpat diam eget ullamcorper. Nunc rhoncus sapien suscipit, pellentesque enim vel, interdum nulla. Maecenas nec consequat ex. Aenean euismod porta finibus. Maecenas pellentesque est felis, non commodo arcu consequat et.
-  </p>
-  <p >
-  Donec mauris dolor, hendrerit sed vestibulum nec, iaculis sed tellus. Aenean sagittis pharetra purus et sagittis. Curabitur sit amet enim magna. Etiam ut ultrices risus. Fusce maximus fermentum libero et pretium. Sed tincidunt, diam in interdum venenatis, elit dolor facilisis purus, vel accumsan massa elit eget purus. Fusce mattis magna vel ultrices lacinia. Praesent sit amet ultricies massa. Donec tellus tortor, tincidunt at bibendum id, euismod tincidunt orci. Pellentesque ultricies lectus ultricies, iaculis ligula condimentum, sodales neque. Suspendisse mauris urna, posuere et euismod at, finibus et metus. Vestibulum dictum mauris ut metus pharetra, nec laoreet dolor vehicula. Curabitur eleifend, orci eget viverra fermentum, dui ex efficitur dui, tristique maximus orci dui quis tortor. Etiam id rhoncus eros, eget tempus ante. Praesent arcu augue, auctor id lacus eget, interdum laoreet nunc. Proin a euismod dui.
-  </p>
-  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque felis ac rutrum aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit dolor leo, non maximus nisi hendrerit eu. Morbi porttitor facilisis venenatis. Donec feugiat turpis sed finibus mollis. Nulla efficitur orci ut pulvinar fringilla. Curabitur pellentesque risus nibh, et porta tellus iaculis ac. Aenean quis sapien vel risus sollicitudin mattis a ac dui. Maecenas a pharetra libero. Mauris ac dui ipsum. Maecenas vitae erat turpis. Etiam laoreet elit sit amet suscipit convallis.
-  </p>
-  <p>
-  Donec nisl orci, euismod nec enim semper, placerat hendrerit dui. Phasellus ut tincidunt purus. Aenean suscipit rhoncus auctor. Nulla libero erat, blandit vitae blandit accumsan, tincidunt cursus quam. Sed sit amet ultrices nibh, sed bibendum libero. Phasellus at euismod nibh. Proin nec velit feugiat, bibendum tellus eu, maximus nibh. Mauris eu quam vel nulla eleifend viverra.
-  </p>
+<div class="bottom">
+  <p>This is the footer</p>
 </div>
 </body>
 </html>
